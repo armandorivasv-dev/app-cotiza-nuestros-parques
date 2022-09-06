@@ -12,7 +12,6 @@ import TableCell from '@mui/material/TableCell';
 import { CotizadorContext } from '../../context/CotizadorContext';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import { Container } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import exportAsImage from '../../utils/exportAsImage';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -42,7 +41,6 @@ export const Propuesta = () => {
 
   const exportRef = useRef();
 
-
   const {
     parque,
     area,
@@ -63,21 +61,12 @@ export const Propuesta = () => {
     montoCuota,
     montoGastos,
     dataGastos,
-    filterAreas,
-    filterCapacidades,
-    handleChangeParque,
-    handleChangeArea,
-    handleChangeCapacidad,
-    handleChangeCuotas,
-    handleChangeDescuento,
-    handleChangePie,
-    handleChangeUf,
     montoNormalizado
   } = useContext(CotizadorContext);
 
   return (
-    <>
-      <Container maxWidth='sm' className="parent">
+    <Box>
+      <Box className="parent">
         <Box
           sx={{
             '& .MuiTextField-root': { m: 1 },
@@ -85,25 +74,6 @@ export const Propuesta = () => {
           align="center"
           ref={exportRef}
         >
-          <Box>
-            <Typography component="h3" variant="caption" align="center" color="text.primary" display="block" gutterBottom>
-              Santiago, {new Date().toLocaleString() + ""}
-            </Typography>
-            <Typography component="h1" variant="h5" align="center" color="text.primary" gutterBottom>
-              PROPUESTA LOS PARQUES
-            </Typography>
-            <Typography component="h2" variant="body1" align="center" color="text.primary" display="block">
-              Ejecutiva Maria Eugenia Viña
-            </Typography>
-            <Typography component="h2" variant="body2" align="center" color="text.primary" display="block" gutterBottom>
-              +56 9 5039 1120
-            </Typography>
-
-          </Box>
-          <Typography component="h1" variant="subtitle1" align="center" color="text.primary">
-            PLAN SELECCIONADO
-          </Typography>
-
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
               <TableHead>
@@ -244,7 +214,7 @@ export const Propuesta = () => {
             </Table>
           </TableContainer>
         </Box>
-      </Container>
+      </Box>
 
       <Box mt={5} align="center">
         <ButtonGroup variant="outlined" aria-label="outlined button group">
@@ -254,6 +224,6 @@ export const Propuesta = () => {
           </Stack>
         </ButtonGroup>
       </Box>
-    </>
+    </Box>
   )
 }

@@ -1,9 +1,8 @@
-import { LayoutContainer } from "./containers/LayoutContainer";
 import { Routes, Route,  BrowserRouter,  } from 'react-router-dom';
-import { Propuesta } from "./components/propuesta/Propuesta";
 import { CotizadorContextProvider } from "./context/CotizadorContext";
 import { Footer } from "./components/footer/Footer";
 import { CotizadorContainer } from "./containers/CotizadorContainer";
+import { PropuestaContainer } from './containers/PropuestaContainer';
 
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path="/"  element={<CotizadorContainer/>}  />
-            <Route path="/propuesta"  element={<Propuesta/>}  />
+            <Route path="/propuesta"  element={<PropuestaContainer/>}  />
           </Routes>
         </BrowserRouter>
         <Footer />

@@ -35,7 +35,22 @@ const montoNormalizado = (value) => {
 }
 
 
-export const CotizadorResult = ({ parque, area, capacidad, reducciones, valorNi, valorNf, precioNi, precioNf, descuentoMonto, precioMenosDescuento, pieMonto, precioMenosPie, montoCuota, montoGastos }) => {
+export const CotizadorResult = ({ 
+    parque, 
+    area, 
+    capacidad, 
+    reducciones, 
+    valorNi, 
+    valorNf, 
+    precioNi, 
+    precioNf, 
+    descuentoMonto, 
+    precioMenosDescuento, 
+    pieMonto, 
+    precioMenosPie, 
+    montoCuota, 
+    montoGastos 
+  }) => {
   return (
     <Box>
       <Box
