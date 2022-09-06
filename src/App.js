@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { LayoutContainer } from "./containers/LayoutContainer";
+import { Routes, Route,  BrowserRouter,  } from 'react-router-dom';
+import { Propuesta } from "./components/propuesta/Propuesta";
+import { CotizadorContextProvider } from "./context/CotizadorContext";
+import { Footer } from "./components/footer/Footer";
+import { CotizadorContainer } from "./containers/CotizadorContainer";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <CotizadorContextProvider>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/"  element={<CotizadorContainer/>}  />
+            <Route path="/propuesta"  element={<Propuesta/>}  />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+    </CotizadorContextProvider>     
     </div>
   );
 }
