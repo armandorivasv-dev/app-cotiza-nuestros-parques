@@ -13,29 +13,11 @@ import { CotizadorContext } from '../../context/CotizadorContext';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import exportAsImage from '../../utils/exportAsImage';
+import exportAsImage, { ExportAsImageButton } from '../../utils/exportAsImage';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
-
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-  [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  [`&.${tableCellClasses.body}`]: {
-    fontSize: 12,
-  },
-}));
-
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover,
-  },
-  // hide last border
-  '&:last-child td, &:last-child th': {
-    border: 0,
-  },
-}));
+import { Header } from '../header/Header';
+import { StyledTableCell, StyledTableRow } from '../../style/StyledTableCell';
 
 export const Propuesta = () => {
 
@@ -74,6 +56,7 @@ export const Propuesta = () => {
           align="center"
           ref={exportRef}
         >
+        <Header/>
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
               <TableHead>
@@ -117,7 +100,7 @@ export const Propuesta = () => {
           </TableContainer>
 
           <Typography component="h3" variant="body2" align="center" color="text.primary" display="block" gutterBottom>
-            Valor UF: {uf}
+            Valor UF: {montoNormalizado(uf)}
           </Typography>
 
           <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
@@ -219,8 +202,8 @@ export const Propuesta = () => {
       <Box mt={5} align="center">
         <ButtonGroup variant="outlined" aria-label="outlined button group">
           <Stack spacing={2} direction="row" >
-            <Link to={`/`} style={{ textDecoration: "none", color: "#000" }}><Button color="inherit">REGRESA COTIZADOR</Button></Link>
-            <Button color="inherit" onClick={() => exportAsImage(exportRef.current, "propuesta-los-parques")}>GENERAR CAPTURA</Button>
+            <Link to={`/`} style={{ textDecoration: "none", color: "#000" }}><Button color="success" variant="contained">REGRESA COTIZADOR</Button></Link>
+            <ExportAsImageButton  exportRef={exportRef}/>
           </Stack>
         </ButtonGroup>
       </Box>

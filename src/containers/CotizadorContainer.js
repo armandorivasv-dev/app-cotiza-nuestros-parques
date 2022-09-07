@@ -1,13 +1,13 @@
-import { Container } from '@mui/material';
+import { Box } from '@mui/material';
 import { CotizadorForm } from '../components/cotizador/CotizadorForm';
-import { Header } from '../components/cotizador/CotizadorFormHeader';
+import { Header } from '../components/header/Header';
 
 export const CotizadorContainer = () => {
   return (
-    <Container maxWidth="xs">
+    <Box>
       <Header />
       <CotizadorForm />
-    </Container>
+    </Box>
 
   )
 }

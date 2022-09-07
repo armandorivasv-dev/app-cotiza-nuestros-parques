@@ -1,56 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import Paper from '@mui/material/Paper';
-import { tableCellClasses } from '@mui/material/TableCell';
-import { styled } from '@mui/material/styles';
 import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
+import { CotizadorContext } from '../../context/CotizadorContext';
+import { StyledTableCell, StyledTableRow } from '../../style/StyledTableCell';
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-  [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  [`&.${tableCellClasses.body}`]: {
-    fontSize: 12,
-  },
-}));
+export const CotizadorResult = () => {
+  const {
+    parque,
+    area,
+    capacidad,
+    reducciones,
+    valorNi,
+    valorNf,
+    precioNi,
+    precioNf,
+    descuentoMonto,
+    precioMenosDescuento,
+    pieMonto,
+    precioMenosPie,
+    montoCuota,
+    montoGastos,
+    montoNormalizado,
+  } = useContext(CotizadorContext);
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover,
-  },
-  // hide last border
-  '&:last-child td, &:last-child th': {
-    border: 0,
-  },
-}));
-
-const montoNormalizado = (value) => {
-  return new Intl.NumberFormat('es-US', { maximumFractionDigits: 2 }).format(value)
-}
-
-
-export const CotizadorResult = ({ 
-    parque, 
-    area, 
-    capacidad, 
-    reducciones, 
-    valorNi, 
-    valorNf, 
-    precioNi, 
-    precioNf, 
-    descuentoMonto, 
-    precioMenosDescuento, 
-    pieMonto, 
-    precioMenosPie, 
-    montoCuota, 
-    montoGastos 
-  }) => {
   return (
     <Box>
       <Box
@@ -150,7 +127,7 @@ export const CotizadorResult = ({
               </StyledTableRow>
             </TableBody>
           </Table>
-        </TableContainer>        
+        </TableContainer>
       </Box>
     </Box>
   )

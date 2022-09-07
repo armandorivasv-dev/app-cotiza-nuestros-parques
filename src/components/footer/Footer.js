@@ -8,7 +8,6 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        bgcolor: 'background.paper',
         p: 6,
         minHeight: '5vh',
         display: 'flex',

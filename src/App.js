@@ -1,13 +1,15 @@
 import { Routes, Route,  BrowserRouter,  } from 'react-router-dom';
+
 import { CotizadorContextProvider } from "./context/CotizadorContext";
 import { Footer } from "./components/footer/Footer";
 import { CotizadorContainer } from "./containers/CotizadorContainer";
 import { PropuestaContainer } from './containers/PropuestaContainer';
+import { Box, Container } from '@mui/material';
 
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App" maxWidth="sm" sx={{ bgcolor: '#f5f5f5' }}>
     <CotizadorContextProvider>
       <BrowserRouter>
           <Routes>
@@ -17,7 +19,7 @@ function App() {
         </BrowserRouter>
         <Footer />
     </CotizadorContextProvider>     
-    </div>
+    </Container>
   );
 }
 

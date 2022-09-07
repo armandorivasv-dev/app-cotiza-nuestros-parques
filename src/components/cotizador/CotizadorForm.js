@@ -8,6 +8,7 @@ import { CotizadorResult } from './CotizadorResult';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { CotizadorContext } from '../../context/CotizadorContext';
+import { Container } from '@mui/material';
 
 export const CotizadorForm = () => {
 
@@ -39,14 +40,14 @@ export const CotizadorForm = () => {
     handleChangeDescuento,
     handleChangePie,
     handleChangeUf,
-  } = useContext(CotizadorContext);
+ } = useContext(CotizadorContext);
 
   return (
     <Box>
       <Box
         component="form"
         sx={{
-          '& .MuiTextField-root': { m: 1, width: '42ch' },
+          '& .MuiTextField-root': { m: 1, width: '42ch', backgroundColor: '#fff' },
         }}
         noValidate
         autoComplete="on"
@@ -59,8 +60,8 @@ export const CotizadorForm = () => {
             label="Parque"
             value={parque}
             onChange={handleChangeParque}
-            helperText="Selecciona el Parque"
             align="left"
+            sx={{backgroundColor: '#fff'}}
           >
             {dataParques.map((element) => (
               <MenuItem key={element.id} value={element.parque}>
@@ -76,7 +77,6 @@ export const CotizadorForm = () => {
             label="Area"
             value={area}
             onChange={handleChangeArea}
-            helperText="Selecciona el Area"
             align="left"
           >
             {filterAreas.map((element) => (
@@ -93,7 +93,6 @@ export const CotizadorForm = () => {
             label="Capacidad"
             value={capacidad}
             onChange={handleChangeCapacidad}
-            helperText="Selecciona la Capacidad"
             align="left"
           >
             {filterCapacidades.map((element) => (
@@ -109,7 +108,8 @@ export const CotizadorForm = () => {
             label="Valor UF"
             id="outlined-start-adornment"
             value={uf}
-
+            placeholder="33333.33" 
+            autoComplete="on"
             onChange={handleChangeUf}
             InputProps={{
               startAdornment: <InputAdornment position="start">$</InputAdornment>,
@@ -122,6 +122,7 @@ export const CotizadorForm = () => {
             label="Descuento"
             id="outlined-start-adornment"
             value={descuento}
+            placeholder="10" 
             autoComplete="on"
             onChange={handleChangeDescuento}
             InputProps={{
@@ -135,6 +136,7 @@ export const CotizadorForm = () => {
             label="Pie"
             id="outlined-start-adornment"
             value={pie}
+            placeholder="10"
             autoComplete="on"
             onChange={handleChangePie}
             InputProps={{
@@ -148,6 +150,8 @@ export const CotizadorForm = () => {
             label="Cuotas"
             id="outlined-start-adornment"
             value={cuotas}
+            placeholder="48"
+            autoComplete="on"
             onChange={handleChangeCuotas}
             InputProps={{
               startAdornment: <InputAdornment position="start">Nro</InputAdornment>,
@@ -156,25 +160,10 @@ export const CotizadorForm = () => {
         </div>
       </Box>
 
-      <CotizadorResult
-        parque={parque}
-        area={area}
-        capacidad={capacidad}
-        reducciones={reducciones}
-        valorNi={valorNi}
-        valorNf={valorNf}
-        precioNi={precioNi}
-        precioNf={precioNf}
-        descuentoMonto={descuentoMonto}
-        precioMenosDescuento={precioMenosDescuento}
-        pieMonto={pieMonto}
-        precioMenosPie={precioMenosPie}
-        montoCuota={montoCuota}
-        montoGastos={montoGastos}
-        montoNormalizado
-      />
+      <CotizadorResult />
+
       <Box  align="center">
-      <Link to={`/propuesta`} style={{textDecoration: "none", color: "#000"}}><Button color="inherit" variant="outlined">GENERAR PROPUESTA</Button></Link>
+      <Link to={`/propuesta`} style={{textDecoration: "none", color: "#000"}}><Button color="success" variant="contained">GENERAR PROPUESTA</Button></Link>
       </Box>
     
 
