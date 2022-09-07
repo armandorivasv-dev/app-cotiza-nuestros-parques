@@ -5,15 +5,12 @@ import TableBody from '@mui/material/TableBody';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import Paper from '@mui/material/Paper';
-import { tableCellClasses } from '@mui/material/TableCell';
-import { styled } from '@mui/material/styles';
 import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
 import { CotizadorContext } from '../../context/CotizadorContext';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import exportAsImage, { ExportAsImageButton } from '../../utils/exportAsImage';
+import { ExportAsImageButton } from '../../utils/exportAsImage';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
 import { Header } from '../header/Header';
@@ -157,7 +154,7 @@ export const Propuesta = () => {
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
               <TableHead>
                 <TableRow>
-                  <StyledTableCell align="center">CUOTAS</StyledTableCell>
+                  <StyledTableCell align="center">MESES</StyledTableCell>
                   <StyledTableCell align="center">MONTO</StyledTableCell>
                 </TableRow>
               </TableHead>
@@ -196,10 +193,13 @@ export const Propuesta = () => {
               </TableBody>
             </Table>
           </TableContainer>
+          <Typography  pb={5} component="h3" variant="caption" align="center" color="text.primary" display="block" gutterBottom>
+            Propuesta valida por 15 dias a contar de esta fecha.
+          </Typography>
         </Box>
       </Box>
 
-      <Box mt={5} align="center">
+      <Box align="center">
         <ButtonGroup variant="outlined" aria-label="outlined button group">
           <Stack spacing={2} direction="row" >
             <Link to={`/`} style={{ textDecoration: "none", color: "#000" }}><Button color="success" variant="contained">REGRESA COTIZADOR</Button></Link>

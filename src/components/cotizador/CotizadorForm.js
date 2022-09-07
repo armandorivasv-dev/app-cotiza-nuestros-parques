@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { CotizadorContext } from '../../context/CotizadorContext';
 import { Container } from '@mui/material';
+import { TextFieldForm } from '../../common/TextFieldForm';
 
 export const CotizadorForm = () => {
 
@@ -61,7 +62,6 @@ export const CotizadorForm = () => {
             value={parque}
             onChange={handleChangeParque}
             align="left"
-            sx={{backgroundColor: '#fff'}}
           >
             {dataParques.map((element) => (
               <MenuItem key={element.id} value={element.parque}>
@@ -103,61 +103,15 @@ export const CotizadorForm = () => {
           </TextField>
         </div>
 
-        <div>
-          <TextField
-            label="Valor UF"
-            id="outlined-start-adornment"
-            value={uf}
-            placeholder="33333.33" 
-            autoComplete="on"
-            onChange={handleChangeUf}
-            InputProps={{
-              startAdornment: <InputAdornment position="start">$</InputAdornment>,
-            }}
-          />
-        </div>
+        <TextFieldForm value={uf} label='UF' placeholder='33333.33' item='$' onChange={handleChangeUf} />
 
-        <div>
-          <TextField
-            label="Descuento"
-            id="outlined-start-adornment"
-            value={descuento}
-            placeholder="10" 
-            autoComplete="on"
-            onChange={handleChangeDescuento}
-            InputProps={{
-              startAdornment: <InputAdornment position="start">%</InputAdornment>,
-            }}
-          />
-        </div>
+        <TextFieldForm value={descuento} label='Descuento' placeholder='10' item='%' onChange={handleChangeDescuento} />
 
-        <div>
-          <TextField
-            label="Pie"
-            id="outlined-start-adornment"
-            value={pie}
-            placeholder="10"
-            autoComplete="on"
-            onChange={handleChangePie}
-            InputProps={{
-              startAdornment: <InputAdornment position="start">%</InputAdornment>,
-            }}
-          />
-        </div>
+        <TextFieldForm value={pie} label='Pie' placeholder='10' item='%' onChange={handleChangePie} />
 
-        <div>
-          <TextField
-            label="Cuotas"
-            id="outlined-start-adornment"
-            value={cuotas}
-            placeholder="48"
-            autoComplete="on"
-            onChange={handleChangeCuotas}
-            InputProps={{
-              startAdornment: <InputAdornment position="start">Nro</InputAdornment>,
-            }}
-          />
-        </div>
+        <TextFieldForm value={cuotas} label='Cuotas' placeholder='12' item='Meses' onChange={handleChangeCuotas} />
+
+
       </Box>
 
       <CotizadorResult />
