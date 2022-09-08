@@ -1,6 +1,6 @@
 # APP - App Cotiza Ventas Nuestros Parques whit React and MUI
 ## App para cotizar productos de Nuestros Parques
-App desarrollada para solventar un problema real que enfrenta el ejecutivo de ventas de Nuestros Parques al necesitar cotizar los productos en su dispositivo movil.
+App desarrollada para solventar una necesidad real que enfrenta el ejecutivo de ventas de Nuestros Parques al necesitar cotizar los productos en su dispositivo movil.
 ## _Descripción_
 Desarrollado en React, Javascript y MUI, permite mostrar y listar segun el plan seleccionado todos los valores del mismo, al agregar los valores de descuento, piue y cuotas realiza los calculos para luego crear la propuesta que le es entregada al cliente final. Diseñada para ser usada en dispositivos moviles. 
 

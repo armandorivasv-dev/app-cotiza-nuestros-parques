@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { dataFinanciera, dataGastos } from '../data/dataParques';
+import { dataFinanciera, dataGastos } from '../data/data';
 import _ from 'underscore';
 
 export const CotizadorContext = createContext();
@@ -7,16 +7,17 @@ export const CotizadorContext = createContext();
 export const CotizadorContextProvider = ({ children }) => {
 
   //STATES
-  const [parque, setParque] = useState('');
-  const [area, setArea] = useState('');
-  const [capacidad, setCapacidad] = useState('');
-  const [reducciones, setreduciones] = useState('');
-  const [valorNi, setValorNi] = useState('');
-  const [valorNf, setValorNf] = useState('');
-  const [descuento, setDescuento] = useState('');
-  const [pie, setPie] = useState('');
-  const [cuotas, setCuotas] = useState('');
-  const [uf, setUf] = useState('');
+  const [ parque, setParque ] = useState('');
+  const [ area, setArea ] = useState('');
+  const [ capacidad, setCapacidad ] = useState('');
+  const [ reducciones, setreduciones ] = useState('');
+  const [ valorNi, setValorNi ] = useState('');
+  const [ valorNf, setValorNf]  = useState('');
+  const [ descuento, setDescuento ] = useState('');
+  const [ pie, setPie ] = useState('');
+  const [ cuotas, setCuotas ] = useState('');
+  const [ uf, setUf ] = useState('');
+  const [ urlcap, SetUrlcap ] = useState('');
 
   //CALC
   const gastosAdmin = dataGastos.reduce((acum, cur) => acum + cur.monto, 0)
@@ -68,6 +69,7 @@ export const CotizadorContextProvider = ({ children }) => {
         setValorNi(e.valor_ni)
         setValorNf(e.valor_nf)
         setreduciones(e.reducciones)
+        SetUrlcap(e.urlcap)
       })
     }
   }, [selectOptions])
@@ -85,6 +87,7 @@ export const CotizadorContextProvider = ({ children }) => {
       pie,
       cuotas,
       uf,
+      urlcap,
       dataGastos,
       precioNi,
       precioNf,

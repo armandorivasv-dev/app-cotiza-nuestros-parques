@@ -75,7 +75,8 @@ export const dataFinanciera = [
     valor_ni: 173,
     valor_nf: 144,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 2,
@@ -86,7 +87,8 @@ export const dataFinanciera = [
     valor_ni: 187,
     valor_nf: 156,
     derecho: 31,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 3,
@@ -97,7 +99,8 @@ export const dataFinanciera = [
     valor_ni: 194,
     valor_nf: 162,
     derecho: 32,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 4,
@@ -119,7 +122,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 133,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 6,
@@ -130,7 +134,8 @@ export const dataFinanciera = [
     valor_ni: 173,
     valor_nf: 144,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 7,
@@ -141,7 +146,8 @@ export const dataFinanciera = [
     valor_ni: 180,
     valor_nf: 150,
     derecho: 30,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 8,
@@ -163,7 +169,8 @@ export const dataFinanciera = [
     valor_ni: 152,
     valor_nf: 127,
     derecho: 25,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 10,
@@ -174,7 +181,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 133,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 11,
@@ -185,7 +193,8 @@ export const dataFinanciera = [
     valor_ni: 166,
     valor_nf: 139,
     derecho: 26,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 12,
@@ -196,7 +205,8 @@ export const dataFinanciera = [
     valor_ni: 291,
     valor_nf: 249,
     derecho: 49,
-    cuota: 3
+    cuota: 3,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 13,
@@ -207,7 +217,8 @@ export const dataFinanciera = [
     valor_ni: 192,
     valor_nf: 160,
     derecho: 32,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 14,
@@ -218,7 +229,8 @@ export const dataFinanciera = [
     valor_ni: 222,
     valor_nf: 185,
     derecho: 37,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 15,
@@ -229,7 +241,8 @@ export const dataFinanciera = [
     valor_ni: 252,
     valor_nf: 210,
     derecho: 42,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 16,
@@ -240,7 +253,8 @@ export const dataFinanciera = [
     valor_ni: 173,
     valor_nf: 144,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 17,
@@ -251,7 +265,8 @@ export const dataFinanciera = [
     valor_ni: 187,
     valor_nf: 156,
     derecho: 31,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 18,
@@ -262,7 +277,8 @@ export const dataFinanciera = [
     valor_ni: 194,
     valor_nf: 162,
     derecho: 32,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 19,
@@ -273,7 +289,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 133,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 20,
@@ -284,7 +301,8 @@ export const dataFinanciera = [
     valor_ni: 173,
     valor_nf: 144,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 21,
@@ -295,7 +313,8 @@ export const dataFinanciera = [
     valor_ni: 180,
     valor_nf: 150,
     derecho: 30,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 22,
@@ -306,7 +325,8 @@ export const dataFinanciera = [
     valor_ni: 152,
     valor_nf: 127,
     derecho: 25,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 23,
@@ -317,7 +337,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 133,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 24,
@@ -328,7 +349,8 @@ export const dataFinanciera = [
     valor_ni: 166,
     valor_nf: 139,
     derecho: 28,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 25,
@@ -339,7 +361,8 @@ export const dataFinanciera = [
     valor_ni: 192,
     valor_nf: 160,
     derecho: 32,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 26,
@@ -350,7 +373,8 @@ export const dataFinanciera = [
     valor_ni: 222,
     valor_nf: 185,
     derecho: 37,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 27,
@@ -361,7 +385,8 @@ export const dataFinanciera = [
     valor_ni: 252,
     valor_nf: 210,
     derecho: 42,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 28,
@@ -372,7 +397,8 @@ export const dataFinanciera = [
     valor_ni: 150,
     valor_nf: 125,
     derecho: 25,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 29,
@@ -383,7 +409,8 @@ export const dataFinanciera = [
     valor_ni: 162,
     valor_nf: 135,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 30,
@@ -394,7 +421,8 @@ export const dataFinanciera = [
     valor_ni: 174,
     valor_nf: 145,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 31,
@@ -405,7 +433,8 @@ export const dataFinanciera = [
     valor_ni: 138,
     valor_nf: 115,
     derecho: 23,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 32,
@@ -416,7 +445,8 @@ export const dataFinanciera = [
     valor_ni: 138,
     valor_nf: 115,
     derecho: 23,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 33,
@@ -427,7 +457,8 @@ export const dataFinanciera = [
     valor_ni: 150,
     valor_nf: 125,
     derecho: 25,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 34,
@@ -438,7 +469,8 @@ export const dataFinanciera = [
     valor_ni: 162,
     valor_nf: 135,
     derecho: 27,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 35,
@@ -449,7 +481,8 @@ export const dataFinanciera = [
     valor_ni: 126,
     valor_nf: 105,
     derecho: 21,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 36,
@@ -460,7 +493,8 @@ export const dataFinanciera = [
     valor_ni: 132,
     valor_nf: 110,
     derecho: 22,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 37,
@@ -471,7 +505,8 @@ export const dataFinanciera = [
     valor_ni: 138,
     valor_nf: 115,
     derecho: 23,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 38,
@@ -482,7 +517,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 132,
     derecho: 26,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 39,
@@ -493,7 +529,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 132,
     derecho: 26,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 40,
@@ -504,7 +541,8 @@ export const dataFinanciera = [
     valor_ni: 172,
     valor_nf: 143,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 41,
@@ -515,7 +553,8 @@ export const dataFinanciera = [
     valor_ni: 185,
     valor_nf: 154,
     derecho: 31,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 42,
@@ -526,7 +565,8 @@ export const dataFinanciera = [
     valor_ni: 286,
     valor_nf: 238,
     derecho: 48,
-    cuota: 3
+    cuota: 3,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 43,
@@ -537,7 +577,8 @@ export const dataFinanciera = [
     valor_ni: 146,
     valor_nf: 121,
     derecho: 24,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 44,
@@ -548,7 +589,8 @@ export const dataFinanciera = [
     valor_ni: 146,
     valor_nf: 121,
     derecho: 24,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 45,
@@ -559,7 +601,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 132,
     derecho: 26,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 46,
@@ -570,7 +613,8 @@ export const dataFinanciera = [
     valor_ni: 172,
     valor_nf: 143,
     derecho: 29,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 47,
@@ -592,7 +636,8 @@ export const dataFinanciera = [
     valor_ni: 132,
     valor_nf: 110,
     derecho: 22,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 49,
@@ -603,7 +648,8 @@ export const dataFinanciera = [
     valor_ni: 146,
     valor_nf: 121,
     derecho: 24,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 50,
@@ -614,7 +660,8 @@ export const dataFinanciera = [
     valor_ni: 159,
     valor_nf: 132,
     derecho: 26,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 51,
@@ -625,7 +672,8 @@ export const dataFinanciera = [
     valor_ni: 238,
     valor_nf: 198,
     derecho: 40,
-    cuota: 3
+    cuota: 3,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 52,
@@ -636,7 +684,8 @@ export const dataFinanciera = [
     valor_ni: 250,
     valor_nf: 250,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 53,
@@ -647,7 +696,8 @@ export const dataFinanciera = [
     valor_ni: 250,
     valor_nf: 250,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 54,
@@ -658,7 +708,8 @@ export const dataFinanciera = [
     valor_ni: 200,
     valor_nf: 200,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 55,
@@ -669,7 +720,8 @@ export const dataFinanciera = [
     valor_ni: 200,
     valor_nf: 200,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 56,
@@ -680,7 +732,8 @@ export const dataFinanciera = [
     valor_ni: 200,
     valor_nf: 200,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 57,
@@ -691,7 +744,8 @@ export const dataFinanciera = [
     valor_ni: 250,
     valor_nf: 250,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 58,
@@ -702,7 +756,8 @@ export const dataFinanciera = [
     valor_ni: 350,
     valor_nf: 350,
     derecho: 0,
-    cuota: 2
+    cuota: 2,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 59,
@@ -713,7 +768,8 @@ export const dataFinanciera = [
     valor_ni: 75,
     valor_nf: 75,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 60,
@@ -724,7 +780,8 @@ export const dataFinanciera = [
     valor_ni: 85,
     valor_nf: 85,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 61,
@@ -735,7 +792,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 62,
@@ -746,7 +804,8 @@ export const dataFinanciera = [
     valor_ni: 75,
     valor_nf: 75,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 63,
@@ -757,7 +816,8 @@ export const dataFinanciera = [
     valor_ni: 85,
     valor_nf: 85,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 64,
@@ -768,7 +828,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 65,
@@ -779,7 +840,8 @@ export const dataFinanciera = [
     valor_ni: 75,
     valor_nf: 75,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 66,
@@ -790,7 +852,8 @@ export const dataFinanciera = [
     valor_ni: 85,
     valor_nf: 85,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 67,
@@ -801,7 +864,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 68,
@@ -812,7 +876,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 69,
@@ -823,7 +888,8 @@ export const dataFinanciera = [
     valor_ni: 105,
     valor_nf: 105,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 70,
@@ -834,7 +900,8 @@ export const dataFinanciera = [
     valor_ni: 110,
     valor_nf: 110,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 71,
@@ -845,7 +912,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 72,
@@ -856,7 +924,8 @@ export const dataFinanciera = [
     valor_ni: 105,
     valor_nf: 105,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 73,
@@ -867,7 +936,8 @@ export const dataFinanciera = [
     valor_ni: 110,
     valor_nf: 110,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-4.jpg',
   },
   {
     id: 74,
@@ -878,7 +948,8 @@ export const dataFinanciera = [
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-2.jpg',
   },
   {
     id: 75,
@@ -889,7 +960,8 @@ export const dataFinanciera = [
     valor_ni: 105,
     valor_nf: 105,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-3.jpg',
   },
   {
     id: 76,
@@ -900,6 +972,7 @@ export const dataFinanciera = [
     valor_ni: 110,
     valor_nf: 110,
     derecho: 0,
-    cuota: 0
+    cuota: 0,
+    urlcap: '../assets/capacidades-4.jpg',
   },  
 ];

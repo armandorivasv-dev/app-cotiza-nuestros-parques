@@ -31,6 +31,7 @@ export const Propuesta = () => {
     pie,
     cuotas,
     uf,
+    urlcap,
     precioNi,
     precioNf,
     descuentoMonto,
@@ -42,6 +43,8 @@ export const Propuesta = () => {
     dataGastos,
     montoNormalizado
   } = useContext(CotizadorContext);
+
+  console.log(urlcap)
 
   return (
     <Box>
@@ -101,8 +104,24 @@ export const Propuesta = () => {
           </Typography>
 
           <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
+            IMAGEN REFERENCIAL
+          </Typography> 
+
+          <Box
+            sx={{
+              width: 300,
+              backgroundColor: '#fff',
+            }}
+          >
+            <Box
+              component="img"
+              src={urlcap}
+            />
+          </Box>
+
+          <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
             DESCUENTO
-          </Typography>
+          </Typography>         
 
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
