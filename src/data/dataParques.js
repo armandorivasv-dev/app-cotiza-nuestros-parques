@@ -655,8 +655,8 @@ export const dataFinanciera = [
     area: 1,
     capacidad: 4,
     reducciones: 8,
-    valor_ni: 250,
-    valor_nf: 250,
+    valor_ni: 200,
+    valor_nf: 200,
     derecho: 0,
     cuota: 2
   },
@@ -666,24 +666,24 @@ export const dataFinanciera = [
     area: 2,
     capacidad: 4,
     reducciones: 8,
-    valor_ni: 250,
-    valor_nf: 250,
+    valor_ni: 200,
+    valor_nf: 200,
     derecho: 0,
     cuota: 2
   },
   {
     id: 56,
     parque: 'EL PRADO',
-    area: 2,
+    area: 3,
     capacidad: 4,
     reducciones: 8,
-    valor_ni: 250,
-    valor_nf: 250,
+    valor_ni: 200,
+    valor_nf: 200,
     derecho: 0,
     cuota: 2
   },
   {
-    id: 56,
+    id: 57,
     parque: 'EL PRADO (CONSTRUIDO)',
     area: 2,
     capacidad: 4,
@@ -694,7 +694,7 @@ export const dataFinanciera = [
     cuota: 2
   },
   {
-    id: 57,
+    id: 58,
     parque: 'EL PRADO (CONSTRUIDO)',
     area: 2,
     capacidad: 8,
@@ -705,24 +705,13 @@ export const dataFinanciera = [
     cuota: 2
   },
   {
-    id: 58,
+    id: 59,
     parque: 'SANTIAGO (S/B)',
     area: 3,
     capacidad: 2,
     reducciones: 4,
     valor_ni: 75,
     valor_nf: 75,
-    derecho: 0,
-    cuota: 0
-  },
-  {
-    id: 59,
-    parque: 'SANTIAGO (S/B)',
-    area: 3,
-    capacidad: 3,
-    reducciones: 8,
-    valor_ni: 85,
-    valor_nf: 85,
     derecho: 0,
     cuota: 0
   },
@@ -730,21 +719,21 @@ export const dataFinanciera = [
     id: 60,
     parque: 'SANTIAGO (S/B)',
     area: 3,
-    capacidad: 4,
-    reducciones: 12,
-    valor_ni: 95,
-    valor_nf: 95,
+    capacidad: 3,
+    reducciones: 8,
+    valor_ni: 85,
+    valor_nf: 85,
     derecho: 0,
     cuota: 0
   },
   {
     id: 61,
-    parque: 'CANAAN (S/B)',
+    parque: 'SANTIAGO (S/B)',
     area: 3,
-    capacidad: 2,
-    reducciones: 4,
-    valor_ni: 75,
-    valor_nf: 75,
+    capacidad: 4,
+    reducciones: 12,
+    valor_ni: 95,
+    valor_nf: 95,
     derecho: 0,
     cuota: 0
   },
@@ -752,6 +741,17 @@ export const dataFinanciera = [
     id: 62,
     parque: 'CANAAN (S/B)',
     area: 3,
+    capacidad: 2,
+    reducciones: 4,
+    valor_ni: 75,
+    valor_nf: 75,
+    derecho: 0,
+    cuota: 0
+  },
+  {
+    id: 63,
+    parque: 'CANAAN (S/B)',
+    area: 3,
     capacidad: 3,
     reducciones: 8,
     valor_ni: 85,
@@ -760,7 +760,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 63,
+    id: 64,
     parque: 'CANAAN (S/B)',
     area: 3,
     capacidad: 4,
@@ -771,7 +771,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 64,
+    id: 65,
     parque: 'EL MANANTIAL (S/B)',
     area: 3,
     capacidad: 2,
@@ -782,7 +782,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 65,
+    id: 66,
     parque: 'EL MANANTIAL (S/B)',
     area: 3,
     capacidad: 3,
@@ -793,22 +793,11 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 66,
+    id: 67,
     parque: 'EL MANANTIAL (S/B)',
     area: 3,
     capacidad: 4,
     reducciones: 12,
-    valor_ni: 95,
-    valor_nf: 95,
-    derecho: 0,
-    cuota: 0
-  },
-  {
-    id: 67,
-    parque: 'SANTIAGO INTEGRA',
-    area: 3,
-    capacidad: 2,
-    reducciones: 4,
     valor_ni: 95,
     valor_nf: 95,
     derecho: 0,
@@ -818,6 +807,17 @@ export const dataFinanciera = [
     id: 68,
     parque: 'SANTIAGO INTEGRA',
     area: 3,
+    capacidad: 2,
+    reducciones: 4,
+    valor_ni: 95,
+    valor_nf: 95,
+    derecho: 0,
+    cuota: 0
+  },
+  {
+    id: 69,
+    parque: 'SANTIAGO INTEGRA',
+    area: 3,
     capacidad: 3,
     reducciones: 8,
     valor_ni: 105,
@@ -826,7 +826,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 69,
+    id: 70,
     parque: 'SANTIAGO INTEGRA',
     area: 3,
     capacidad: 4,
@@ -837,24 +837,13 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 70,
+    id: 71,
     parque: 'CANAAN INTEGRA',
     area: 3,
     capacidad: 2,
     reducciones: 4,
     valor_ni: 95,
     valor_nf: 95,
-    derecho: 0,
-    cuota: 0
-  },
-  {
-    id: 71,
-    parque: 'CANAAN INTEGRA',
-    area: 3,
-    capacidad: 3,
-    reducciones: 8,
-    valor_ni: 105,
-    valor_nf: 105,
     derecho: 0,
     cuota: 0
   },
@@ -862,6 +851,17 @@ export const dataFinanciera = [
     id: 72,
     parque: 'CANAAN INTEGRA',
     area: 3,
+    capacidad: 3,
+    reducciones: 8,
+    valor_ni: 105,
+    valor_nf: 105,
+    derecho: 0,
+    cuota: 0
+  },
+  {
+    id: 73,
+    parque: 'CANAAN INTEGRA',
+    area: 3,
     capacidad: 4,
     reducciones: 12,
     valor_ni: 110,
@@ -870,7 +870,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 73,
+    id: 74,
     parque: 'EL MANANTIAL INTEGRA',
     area: 3,
     capacidad: 2,
@@ -881,7 +881,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 74,
+    id: 75,
     parque: 'EL MANANTIAL INTEGRA',
     area: 3,
     capacidad: 3,
@@ -892,7 +892,7 @@ export const dataFinanciera = [
     cuota: 0
   },
   {
-    id: 75,
+    id: 76,
     parque: 'EL MANANTIAL INTEGRA',
     area: 3,
     capacidad: 4,
@@ -901,6 +901,5 @@ export const dataFinanciera = [
     valor_nf: 110,
     derecho: 0,
     cuota: 0
-  },
-  
+  },  
 ];

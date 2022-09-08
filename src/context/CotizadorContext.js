@@ -71,6 +71,11 @@ export const CotizadorContextProvider = ({ children }) => {
       })
     }
   }, [selectOptions])
+
+console.log(capacidad)
+
+
+
   return (
 
     <CotizadorContext.Provider value={{
