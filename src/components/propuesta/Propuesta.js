@@ -57,6 +57,9 @@ export const Propuesta = () => {
           ref={exportRef}
         >
         <Header/>
+        <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
+            PLAN SELECCIONADO
+          </Typography> 
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
               <TableHead>

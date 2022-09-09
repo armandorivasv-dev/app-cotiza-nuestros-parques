@@ -41,7 +41,7 @@ export const CotizadorForm = () => {
         autoComplete="on"
         align="center"
       >
-        <div>
+        <Box>
           <TextField
             id="outlined-select-currency"
             select
@@ -56,8 +56,8 @@ export const CotizadorForm = () => {
               </MenuItem>
             ))}
           </TextField>
-        </div>
-        <div>
+        </Box>
+        <Box>
           <TextField
             id="outlined-select-currency"
             select
@@ -72,8 +72,8 @@ export const CotizadorForm = () => {
               </MenuItem>
             ))}
           </TextField>
-        </div>
-        <div>
+        </Box>
+        <Box>
           <TextField
             id="outlined-select-currency"
             select
@@ -88,7 +88,7 @@ export const CotizadorForm = () => {
               </MenuItem>
             ))}
           </TextField>
-        </div>
+        </Box>
 
         <TextFieldForm value={uf} label='UF' placeholder='33333.33' item='$' onChange={handleChangeUf} />
         <TextFieldForm value={descuento} label='Descuento' placeholder='10' item='%' onChange={handleChangeDescuento} />

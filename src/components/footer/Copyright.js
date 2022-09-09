@@ -14,7 +14,6 @@ const iconStyle = {
 export const Copyright = () => {
   return (
     <Grid>
-
       <Grid container justifyContent="center" spacing={3} >
         <Grid item>
           <Link href="https://github.com/armandoweb-agency" target="_blank"><GitHubIcon style={iconStyle} /></Link>

@@ -7,21 +7,21 @@ export const Header = () => {
   return (
     <Box>
       <Box
-        sx={{ pt:3,
+        sx={{
+          pt: 3,
           '& .MuiTextField-root': { m: 1 }
-          
         }}
         align="center"
-
       >
 
         <Box >
-        <img
-          src={logo}
-          srcSet={logo}
-          alt="cotizador nuestros parques"
-          loading="lazy"
-        />
+          <Box
+            component='img'
+            srcSet={logo}
+            alt="cotizador nuestros parques"
+            loading="lazy"
+          />
+
           <Typography component="h3" variant="caption" align="center" color="text.primary" display="block" gutterBottom>
             Santiago, {new Date().toLocaleString() + ""}
           </Typography>
