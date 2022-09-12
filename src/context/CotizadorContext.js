@@ -6,7 +6,6 @@ import moment from "moment"
 
 export const CotizadorContext = createContext();
 
-
 export const CotizadorContextProvider = ({ children }) => {
 
   const fechaActual = moment().format("YYYY-MM-DD")
@@ -22,6 +21,7 @@ export const CotizadorContextProvider = ({ children }) => {
         let valorUfStorage = localStorage.getItem('valorUf')
         if (fechaActual === fechaUfStorage) {
           setValorUf(valorUfStorage)
+          setFechaUf(fechaUfStorage)
         } else {
           setValorUf(response.data.UFs[0].Valor)
           setFechaUf(response.data.UFs[0].Fecha)
@@ -54,6 +54,7 @@ export const CotizadorContextProvider = ({ children }) => {
   const [fechaUf, setFechaUf] = useState('');
   const [urlcap, SetUrlcap] = useState('');
 
+  const fechaUfView = moment(fechaUf).format("DD-MM-YYYY")
 
   //EVENTS
   const handleChangeParque = (event) => {
@@ -88,8 +89,6 @@ export const CotizadorContextProvider = ({ children }) => {
   const montoCuota = (precioMenosPie / cuotas)
   const montoGastos = montoCuota + gastosAdmin
 
-
-
   //FILTERS
   const filterParques = dataFinanciera.filter(e => e.parque === parque)
   const filterCapacidades = _.unique(filterParques, (e) => { return e.capacidad })
@@ -120,6 +119,7 @@ export const CotizadorContextProvider = ({ children }) => {
       pie,
       cuotas,
       valorUf,
+      fechaUfView,
       urlcap,
       dataGastos,
       precioNi,

@@ -30,7 +30,8 @@ export const Propuesta = () => {
     descuento,
     pie,
     cuotas,
-    uf,
+    valorUf,
+    fechaUfView,
     urlcap,
     precioNi,
     precioNf,
@@ -101,7 +102,7 @@ export const Propuesta = () => {
           </TableContainer>
 
           <Typography component="h3" variant="body2" align="center" color="text.primary" display="block" gutterBottom>
-            Valor UF: {montoNormalizado(uf)}
+            Valor UF: {valorUf} al {fechaUfView}
           </Typography>
 
           <Typography component="h2" variant="subtitle1" align="center" color="text.primary">

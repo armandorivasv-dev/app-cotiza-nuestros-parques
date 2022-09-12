@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import TableRow from '@mui/material/TableRow';
 import { CotizadorContext } from '../../context/CotizadorContext';
 import { StyledTableCell, StyledTableRow } from '../../style/StyledTableCell';
+import Typography from '@mui/material/Typography';
 
 export const CotizadorResult = () => {
   const {
@@ -15,6 +16,8 @@ export const CotizadorResult = () => {
     area,
     capacidad,
     reducciones,
+    valorUf,
+    fechaUfView,
     valorNi,
     valorNf,
     precioNi,
@@ -28,7 +31,6 @@ export const CotizadorResult = () => {
     montoNormalizado,
   } = useContext(CotizadorContext);
 
- // console.log(uf)
 
   return (
     <Box>
@@ -80,6 +82,10 @@ export const CotizadorResult = () => {
             </TableBody>
           </Table>
         </TableContainer>
+
+        <Typography component="h3" variant="body2" align="center" color="text.primary" display="block" gutterBottom>
+          Valor UF: {valorUf} al {fechaUfView}
+        </Typography>
 
         <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
           <Table sx={{ minWidth: 200 }} aria-label="customized table">
