@@ -44,8 +44,6 @@ export const Propuesta = () => {
     montoNormalizado
   } = useContext(CotizadorContext);
 
-  console.log(urlcap)
-
   return (
     <Box>
       <Box className="parent">
@@ -56,10 +54,10 @@ export const Propuesta = () => {
           align="center"
           ref={exportRef}
         >
-        <Header/>
-        <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
+          <Header />
+          <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
             PLAN SELECCIONADO
-          </Typography> 
+          </Typography>
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
               <TableHead>
@@ -108,7 +106,7 @@ export const Propuesta = () => {
 
           <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
             IMAGEN REFERENCIAL
-          </Typography> 
+          </Typography>
 
           <Box
             sx={{
@@ -124,7 +122,7 @@ export const Propuesta = () => {
 
           <Typography component="h2" variant="subtitle1" align="center" color="text.primary">
             DESCUENTO
-          </Typography>         
+          </Typography>
 
           <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
             <Table sx={{ minWidth: 200 }} aria-label="customized table">
@@ -210,12 +208,12 @@ export const Propuesta = () => {
                   <StyledTableCell align="center">{montoNormalizado(dataGastos[0].monto)}</StyledTableCell>
                   <StyledTableCell align="center">{montoNormalizado(dataGastos[1].monto)}</StyledTableCell>
                   <StyledTableCell align="center">{montoNormalizado(montoGastos)}</StyledTableCell>
-                  
+
                 </StyledTableRow>
               </TableBody>
             </Table>
           </TableContainer>
-          <Typography  pb={5} component="h3" variant="caption" align="center" color="text.primary" display="block" gutterBottom>
+          <Typography pb={5} component="h3" variant="caption" align="center" color="text.primary" display="block" gutterBottom>
             Propuesta valida por 15 dias a contar de esta fecha.
           </Typography>
         </Box>
@@ -225,7 +223,7 @@ export const Propuesta = () => {
         <ButtonGroup variant="outlined" aria-label="outlined button group">
           <Stack spacing={2} direction="row" >
             <Link to={`/`} style={{ textDecoration: "none", color: "#000" }}><Button color="success" variant="contained">REGRESA COTIZADOR</Button></Link>
-            <ExportAsImageButton  exportRef={exportRef}/>
+            <ExportAsImageButton exportRef={exportRef} />
           </Stack>
         </ButtonGroup>
       </Box>

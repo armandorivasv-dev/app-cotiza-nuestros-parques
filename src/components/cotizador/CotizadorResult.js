@@ -28,6 +28,8 @@ export const CotizadorResult = () => {
     montoNormalizado,
   } = useContext(CotizadorContext);
 
+ // console.log(uf)
+
   return (
     <Box>
       <Box
@@ -36,6 +38,7 @@ export const CotizadorResult = () => {
         }}
         align="center"
       >
+
         <TableContainer component={Paper} sx={{ m: 1, width: '42ch' }}>
           <Table sx={{ minWidth: 200 }} aria-label="customized table">
             <TableHead>

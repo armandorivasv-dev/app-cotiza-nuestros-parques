@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
@@ -8,8 +8,14 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { CotizadorContext } from '../../context/CotizadorContext';
 import { TextFieldForm } from '../../common/TextFieldForm';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { CleaningServices } from '@mui/icons-material';
 
 export const CotizadorForm = () => {
+
+
 
   const {
     parque,
@@ -19,6 +25,7 @@ export const CotizadorForm = () => {
     pie,
     cuotas,
     uf,
+    dia,
     filterAreas,
     filterCapacidades,
     handleChangeParque,
@@ -27,7 +34,7 @@ export const CotizadorForm = () => {
     handleChangeCuotas,
     handleChangeDescuento,
     handleChangePie,
-    handleChangeUf,
+    handleChangeDia
   } = useContext(CotizadorContext);
 
   return (
@@ -90,7 +97,7 @@ export const CotizadorForm = () => {
           </TextField>
         </Box>
 
-        <TextFieldForm value={uf} label='UF' placeholder='33333.33' item='$' onChange={handleChangeUf} />
+        {/* <TextFieldForm value={uf} label='UF' placeholder='33333.33' item='$' onChange={handleChangeUf} /> */}
         <TextFieldForm value={descuento} label='Descuento' placeholder='10' item='%' onChange={handleChangeDescuento} />
         <TextFieldForm value={pie} label='Pie' placeholder='10' item='%' onChange={handleChangePie} />
         <TextFieldForm value={cuotas} label='Cuotas' placeholder='12' item='Meses' onChange={handleChangeCuotas} />
